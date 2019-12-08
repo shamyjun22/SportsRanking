@@ -32,8 +32,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     BrowserAnimationsModule,
     NgbModule,
     RouterModule.forRoot([
-      {path:'', component: NavComponent},
-      {path:'home', component:HomeComponent},
+      {path:'', component:HomeComponent},
       {path:'schedules', component:SchedulesComponent},
       {path:'ranking', component:RankingComponent},
       {path:'gallery', component:GalleryComponent},
