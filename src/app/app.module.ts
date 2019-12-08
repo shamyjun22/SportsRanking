@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavComponent } from './nav/nav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { TeamsComponent } from './teams/teams.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     GalleryComponent,
     AboutUsComponent,
     NavComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    TeamsComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +38,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
       {path:'schedules', component:SchedulesComponent},
       {path:'ranking', component:RankingComponent},
       {path:'gallery', component:GalleryComponent},
+      {path:'teams', component:TeamsComponent},
       {path:'about-us', component:AboutUsComponent},
       {path:'**', component:NotFoundComponent},
     ])
