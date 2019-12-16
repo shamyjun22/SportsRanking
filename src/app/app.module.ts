@@ -26,7 +26,7 @@ import { TeamsComponent } from './teams/teams.component';
     AboutUsComponent,
     NavComponent,
     NotFoundComponent,
-    TeamsComponent
+    TeamsComponent,
   ],
   imports: [
     BrowserModule,

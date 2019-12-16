@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ComponentFactoryResolver } from '@angular/core';
 
 @Component({
   selector: 'app-schedules',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SchedulesComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+   }
+
 
   ngOnInit() {
   }
