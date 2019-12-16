@@ -76,3 +76,20 @@ h1 {
     font-size: 50px;
     font-weight: 600;
 }
+.author {
+    a {
+        font-family: Courier New;
+        font-size: 10mm;
+        color:#1976d2;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    b {
+        font-family: Courier New;
+        font-size: 6mm;
+        font-style: italic;
+        color: red;
+    }
+}
