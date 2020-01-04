@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "sports-ranking-1": {
+      "hosting": {
+        "SportsRanking": [
+          "sports-ranking-1"
+        ]
+      }
+    }
+  }
+}

@@ -1,46 +1,21 @@
 
 
-	<body>
-		<div class="wrapper">
-			<div class="container">
-			<ul style="text-align: center;" class="nav navbar-nav" >		
-			</ul>
-		  
-		<div>
-            
-		<h1 style="font-style: oblique; font-size: 20mm; text-align: center;">  Team Scores  </h1>			
-			<h1 style="text-align: left;">
-                <a style="font-style: italic; font-size: 10mm;"><img width="200px" height="200px" src="/../../assets/COB.jpg">  College Of Business</a><b style="font-size: 12mm;"> 150 </b>
-               
-            </h1>
-            
-            <h1>
-                <a style="font-style: italic; font-size: 8mm;"><img width="200px" height="200px" src="/../../assets/COD.jpg">  College of Dentistry</a><b style="font-size: 9mm;"> 130 </b>
-                
-				
-            </h1>
-            <h1>
-                <a style="font-style: italic; font-size: 6mm;"><img width="200px" height="200px" src="/../../assets/COM.jpg">  College of Medicine</a><b style="font-size: 8mm;"> 110 </b>
+<div class="jumbotron">
+    <div>
+      <h1>University Teams</h1>
+      <h4>Your Teams</h4> 
+    </div>
+</div>
 
-            </h1>
-            <h1>
-                <a style="font-style: italic; font-size: 6mm;"><img width="200px" height="200px" src="/../../assets/AUP.png">  College of Arts and Humanities</a><b style="font-size: 8mm;"> 100 </b>
-
-            </h1>
-            <h1>
-                <a style="font-style: italic; font-size: 6mm;"><img width="200px" height="200px" src="/../../assets/AUP.png">  College of Theology</a><b style="font-size: 8mm;"> 90 </b>
-
-            </h1>
-            <h1>
-                <a style="font-style: italic; font-size: 6mm;"><img width="200px" height="200px" src="/../../assets/AUP.png">  College of Nursing</a><b style="font-size: 8mm;"> 85 </b>
-
-            </h1>
-            <h1>
-                <a style="font-style: italic; font-size: 6mm;"><img width="200px" height="200px" src="/../../assets/AUP.png">  College of Education</a><b style="font-size: 8mm;"> 70 </b>
-
-            </h1>
-		</div>
-		</div>
-		
-		</div>
-	</body>
+<aside>
+    <div *ngFor="let tm of team" class="team">
+      <span class="badge badge-primary">{{tm.score}}</span>
+      <img src="../../assets/Colleges/{{tm.photo}}" alt="">
+      <br>
+      <br>
+      <h6>{{tm.name}}</h6>
+      <a href="{{tm.website}}" target="_blank"><button>Visit Us</button></a>
+      <hr>
+      <br>
+    </div>
+</aside>

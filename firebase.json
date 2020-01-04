@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "SportsRanking",
+      "public": "dist/SportsRanking",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

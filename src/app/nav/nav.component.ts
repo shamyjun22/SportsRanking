@@ -7,6 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+  txtshow: string = 'show';
+  txthide: string = 'hide';
+
+  show: string = this.txtshow;
+
+  toggle(): void {
+    if(this.show === this.txtshow){
+      this.show = this.txthide;
+    }else {
+      this.show = this.txtshow;
+    }
+  }
+
   constructor() { }
 
   ngOnInit() {

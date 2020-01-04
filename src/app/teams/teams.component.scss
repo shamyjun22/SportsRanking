@@ -1,7 +1,73 @@
-body{
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
-	background-image: url("/../../assets/WhiteBG.jpg");
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+* {
+    font-family: 'Montserrat';
 
+}
+
+h1, h4, h6{
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron div {
+    padding: 5px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    border: 3px solid #101351
+}
+
+aside {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+img {
+    border-radius: 100px;
+    border: 1px white solid;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    height: auto;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+.team {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+span {
+    position: relative;
+    border-radius: 100px;
+    left: 5px;
+    top: 30px;
+    font-size: large;
 }

@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+* {
+    font-family: 'Montserrat';
+
+}
+
+
 .home {
 	width: 100%;
     height: 250px;
@@ -6,7 +13,6 @@
 	background-position: center;
     background-repeat: no-repeat;
     h1 {
-        font-family: Courier New;
         color:#1976d2;
         text-align: center;
         justify-content: center;
@@ -29,6 +35,8 @@
     img {
     max-width: none;
     height: 100%;
+    position: relative;
+    margin-right: 0px;
     }   
 }
 div {
@@ -37,7 +45,6 @@ div {
     display: block;
 }
 p {
-    font-family: Courier New;
     font-size: 18px;
     line-height: 2.145;
     font-weight: 700;
@@ -51,7 +58,6 @@ p {
     background: linear-gradient(to right, #7800ff, #ff0e3b);
     text-align: center;
     h1 {
-        font-family: Courier New;
         color:#1976d2;
         padding-top: 40px;
         font-size: 60px;
@@ -62,7 +68,6 @@ p {
 		background-size: 200% auto;
 		color: #fff;
 		background-clip: text;
-		text-fill-color: transparent;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		animation: textclip 1.5s linear infinite;
@@ -70,26 +75,55 @@ p {
     }
 }
 h1 {
-    font-family: Courier New;
-    color:#1976d2;
     padding-top: 6%;
     font-size: 50px;
     font-weight: 600;
 }
 .author {
     a {
-        font-family: Courier New;
+  
         font-size: 10mm;
         color:#1976d2;
         img {
             width: 100px;
             height: 100px;
+            border-radius: 100px;
         }
     }
     b {
-        font-family: Courier New;
+
         font-size: 6mm;
         font-style: italic;
         color: red;
     }
+}
+
+.author .container {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    h1 {
+        display: grid;
+        grid-template-rows: auto auto;
+        a {
+            color: white;
+        }
+    }
+}
+
+
+.footer {
+    height: 150px;
+    width: 100%;
+    background-color: #101351;
+    padding: 10px;
+
+    figure {
+        color: white;
+        text-align: center;
+    }
+}
+
+a i {
+    color: white;
 }

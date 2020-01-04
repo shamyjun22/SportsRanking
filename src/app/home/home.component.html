@@ -1,4 +1,13 @@
 <div>
-    <p>homeworks</p>
+    <img src="../../assets/background.png" alt="">
 </div>
 
+<ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+    <ng-template ngbSlide *ngFor="let say of quotes">
+        <div class="center">
+            <h1>{{say.quote}}</h1>
+            <br>
+            <h6>-{{say.author}}</h6>
+        </div>
+    </ng-template>    
+</ngb-carousel>
