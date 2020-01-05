@@ -1,31 +1,41 @@
-<div class="jumbotron">
-  <div>
-    <h1>Game Schedules</h1>
-    <h4>The Gameplay</h4>
-  </div>
-</div>
-
-
-<div class="card">
-  <div class="card-header">Game</div>
-    <div class="mygame" *ngFor="let gm of games">
-      <div class="card-body">
-        <div class="team">
-          <div class="t1">
-            <img src="../../assets/Colleges/{{gm.image1}}">
-            <h5>{{gm.team1}}</h5>
-          </div>
-          <br>
-          <div class="t2">
-            <img src="../../assets/Colleges/{{gm.image2}}" alt="">
-            <h5>{{gm.team2}}</h5>
-          </div>
-        </div>
-        <div class="time">
-          <h5>Tomorrow</h5>
-          <h6>{{gm.time}}</h6>
-        </div>
+<ngb-carousel [showNavigationArrows]="false" [showNavigationIndicators]="false">
+  <ng-template ngbSlide *ngFor="let say of quotes">
+      <div class="center">
+          <h6>" {{say.quote}} "</h6>
+          <h6>-{{say.author}}</h6>
       </div>
-    </div>
-  <div class="card-footer"></div>
-</div>
+  </ng-template>    
+</ngb-carousel>
+
+
+<aside>
+  <h5>Game of Today</h5>
+  <div class="schedule">
+    <figure *ngFor="let gm of games">
+      <h3>
+        <img src="../../assets/Colleges/{{gm.image1}}">
+        <h6>{{gm.team1}}</h6>
+        <img src="../../assets/Colleges/{{gm.image2}}">
+        <h6>{{gm.team2}}</h6>
+        <h6>{{gm.time}}</h6>
+      </h3>
+    </figure>
+  </div>
+  <br>
+</aside>
+<br>
+<aside>
+  <h5>Game of Tomorrow</h5>
+  <div class="schedule">
+    <figure *ngFor="let gm of games">
+      <h3>
+        <img src="../../assets/Colleges/{{gm.image1}}">
+        <h6>{{gm.team1}}</h6>
+        <img src="../../assets/Colleges/{{gm.image2}}">
+        <h6>{{gm.team2}}</h6>
+        <h6>{{gm.time}}</h6>
+      </h3>
+    </figure>
+  </div>
+  <br>
+</aside>

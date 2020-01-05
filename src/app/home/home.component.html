@@ -2,7 +2,7 @@
     <img src="../../assets/background.png" alt="">
 </div>
 
-<ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+<ngb-carousel [showNavigationArrows]="false" [showNavigationIndicators]="false">
     <ng-template ngbSlide *ngFor="let say of quotes">
         <div class="center">
             <h1>{{say.quote}}</h1>

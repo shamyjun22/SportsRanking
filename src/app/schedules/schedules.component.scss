@@ -12,17 +12,6 @@ h1, h4{
     width: 100%;
 }
 
-h5 {
-    width: 100%;
-    margin-left: 10px;
-    margin-top: 5px;
-}
-
-h6 {
-    color: red;
-    margin-left: 10px;
-    margin-top: 5px;
-}
 
 .jumbotron {
     background-color: transparent; 
@@ -37,60 +26,84 @@ h6 {
     border: 3px solid #101351;
 }
 
-.card {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    
-
-    .card-header {
-        background-color: #101351;
-        color: white;
-        text-align: center;
-    }
-
-    .mygame {
-
-        .card-body {
-            margin: 5px;
-            display: grid;
-            grid-template-columns: repeat(2, 40%);
-            border: 1px solid rgba(74,0,251,1);
-            width: 70%;
-            height: 20%;
-            justify-content: space-between;
-            grid-row-gap: 15px;
-            
-            .team {
-
-                display: grid;
-                grid-template-rows: 20px 20px;
-                .t1{
-                    display: grid;
-                    grid-template-columns: 40px auto;
-                    margin-left: 10px;
-
-                }
-
-                .t2 {
-                    display: grid;
-                    grid-template-columns: 40px auto;
-                    margin-left: 10px;
-
-                }
-            }
-            
-            .time {
-                border-left: 1px gray solid;
-            }
-        }
-
-        
-    }
-    
-}
 
 img {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
 }
+
+
+h5 {
+    text-align: center;
+    color: white;
+    background-color: #101351;
+    width: 960px;
+    height: 50px;
+    border: 1px solid white;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+h6 {
+    margin-top: 5px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    width: 960px;
+    h3 {
+        text-align: center;
+        margin: 0;
+        padding: 2px;
+        display: grid;
+        grid-template-columns: 30px 350px 30px 350px 100px;
+        border: 1px solid #101351;
+    }
+
+    
+}
+
+figure:nth-child(even){
+    background-color: #101351;
+    color: white;
+}
+
+.schedule {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside {
+    margin-left: auto;
+    margin-right: auto;
+    width: 966px;
+    background-color: white;
+    padding: 1px;
+    border: 2px solid #101351;
+}
+
+.center  {
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 10px;
+    margin-bottom: 50px;
+  }
+
+
+  .center h6 {
+      color: white;
+      font-weight: bold;
+  }
+
+
+
+  .center:last-child(){
+      font-size: 1em;
+      font-weight: lighter;
+  }
